@@ -24,7 +24,7 @@ const Header = () => {
         <Container>
           {/* CRITICAL FIX: Changed href to 'as={Link} to' to prevent hard state flushes */}
           <Navbar.Brand as={Link} to="/">
-            <BrandLogo>AVERITTE EXPRESS</BrandLogo>
+            <BrandLogo>AVERITT EXPRESS</BrandLogo>
           </Navbar.Brand>
           
           <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggle" />
