@@ -1,36 +1,67 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import axios from "axios";
 import "../../Css/Login.css"
 import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Context/AuthContext";
+
 const LoginScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const navigate = useNavigate()
-
+  const [submitting, setSubmitting] = useState(false);
+  const navigate = useNavigate();
+  const { setActiveUser, setConfig } = useContext(AuthContext);
 
   const loginHandler = async (e) => {
     e.preventDefault();
+    setSubmitting(true);
+    setError("");
 
     try {
       const { data } = await axios.post(
         "https://sparko-tracking.onrender.com/auth/login",
         { email, password }
       );
+
       localStorage.setItem("authToken", data.token);
 
+      const newConfig = {
+        headers: {
+          "Content-Type": "application/json",
+          authorization: `Bearer ${data.token}`,
+        },
+      };
+
+      setConfig(newConfig);
+
+      try {
+        const { data: privateData } = await axios.get(
+          "https://sparko-tracking.onrender.com/auth/private",
+          newConfig
+        );
+        setActiveUser(privateData.user);
+      } catch (profileError) {
+        console.error("Failed to load user profile after login:", profileError);
+      }
+
       setTimeout(() => {
+        navigate("/");
+      }, 1800);
+    } catch (err) {
+      const message =
+        err.response?.data?.error ||
+        err.response?.data?.message ||
+        (err.request && !err.response
+          ? "Unable to reach the server. Check your connection and try again."
+          : err.message) ||
+        "Login failed. Please try again.";
 
-        navigate("/")
-
-      }, 1800)
-
-    } catch (error) {
-      setError(error.response.data.error);
+      setError(message);
       setTimeout(() => {
         setError("");
       }, 4500);
-
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -94,8 +125,8 @@ const LoginScreen = () => {
             </div>
             <Link to="/forgotpassword" className="login-screen__forgotpassword"> Forgot Password ?
             </Link>
-            <button type="submit" >
-              Login
+            <button type="submit" disabled={submitting}>
+              {submitting ? "Logging in..." : "Login"}
             </button>
 
           </form>

@@ -55,11 +55,6 @@ function Footer() {
                   <Instagram size={20} />
                 </SocialIcon>
               </SocialIcons>
-              
-              <EmailContact href="mailto:averittexpressdelivery3@gmail.com">
-                <Envelope size={16} className="me-2" />
-                averittexpressdelivery3@gmail.com
-              </EmailContact>
             </FooterSection>
           </Col>
         </Row>

@@ -1,18 +1,26 @@
-import React, { useContext } from "react";
-import { NavLink, Link } from "react-router-dom"; // Added native Link import
+import React, { useContext, useEffect, useState } from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthContext";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import styled from "styled-components";
 
 const Header = () => {
-  // Pull session variables from your global context
   const { activeUser, loading } = useContext(AuthContext);
+  const [expanded, setExpanded] = useState(false);
+  const { pathname } = useLocation();
 
-  // Re-evaluate navigation links on every context mutation state shift smoothly
+  const isAuthenticated = Boolean(activeUser?._id);
+
+  useEffect(() => {
+    setExpanded(false);
+  }, [pathname]);
+
+  const closeNav = () => setExpanded(false);
+
   const navigationLinks = [
     { to: "/", label: "HOME" },
     { to: "/tracking", label: "TRACK" },
-    ...(activeUser ? [{ to: "/create-post", label: "NEW PACKAGE" }] : []),
+    ...(isAuthenticated ? [{ to: "/create-post", label: "NEW PACKAGE" }] : []),
     { to: "/about", label: "ABOUT" },
     { to: "/meet-the-team", label: "TEAM" },
     { to: "/summary", label: "INSIGHTS" },
@@ -20,15 +28,20 @@ const Header = () => {
 
   return (
     <HeaderStyles>
-      <Navbar collapseOnSelect expand="lg" className="main-navbar" sticky="top">
+      <Navbar
+        expand="lg"
+        expanded={expanded}
+        onToggle={setExpanded}
+        className="main-navbar"
+        sticky="top"
+      >
         <Container>
-          {/* CRITICAL FIX: Changed href to 'as={Link} to' to prevent hard state flushes */}
-          <Navbar.Brand as={Link} to="/">
+          <Navbar.Brand as={Link} to="/" onClick={closeNav}>
             <BrandLogo>AVERITT EXPRESS</BrandLogo>
           </Navbar.Brand>
-          
+
           <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggle" />
-          
+
           <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
             <Nav className="ms-auto align-items-center">
               {loading ? (
@@ -38,6 +51,7 @@ const Header = () => {
                   <StyledNavLink
                     key={link.to}
                     to={link.to}
+                    onClick={closeNav}
                     className={({ isActive }) => (isActive ? "active-route" : "")}
                   >
                     {link.label}
