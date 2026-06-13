@@ -14,7 +14,7 @@ function Footer() {
           {/* Brand/About Segment */}
           <Col xs={12} md={5} lg={4}>
             <FooterSection>
-              <FooterLogo>Averitte Express</FooterLogo>
+              <FooterLogo>Averitt Express</FooterLogo>
               <FooterDescription>
                 A distinguished global logistics network meticulously executing modern supply chain controls. 
                 We handle premium freight forwarding and specialized live pet logistics with unparalleled safety standards.
