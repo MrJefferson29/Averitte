@@ -27,17 +27,17 @@ export default function Sc3() {
     {
       image: bo1,
       title: "Cargo Flow Through Better Supply Chain Visibility Control",
-      description: "Enhancing Cargo Flow: Transforming Logistics Through Better Supply Chain Visibility Control At Averitte Express..."
+      description: "Enhancing Cargo Flow: Transforming Logistics Through Better Supply Chain Visibility Control At TFL..."
     },
     {
       image: bo2,
       title: "New Additions To Our Great Metro Trucks Fleet",
-      description: "Exciting News from Averitte Express: Introducing Our New Metro Trucks Fleet! At Averitte Express, we’re..."
+      description: "Exciting News from Time Factor Logistics: Introducing Our New Metro Trucks Fleet! At TFL, we’re..."
     },
     {
       image: bo3,
       title: "The New Driver Training Recruitment Program",
-      description: "Introducing Averitte Express’s New Driver Training Recruitment Program! At Averitte Express, we’re committed to excellence..."
+      description: "Introducing TFL's New Driver Training Recruitment Program! At Time Factor, we’re committed to excellence..."
     }
   ];
 
