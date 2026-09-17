@@ -24,7 +24,7 @@ const testimonials = [
   {
     name: "Miller Temili",
     feedback:
-      "Averitte Express truly sets the standard for delivery services. My packages always arrive on time, and I’m amazed at how careful they are with handling fragile items.",
+      "Time FActor Logistics truly sets the standard for delivery services. My packages always arrive on time, and I’m amazed at how careful they are with handling fragile items.",
     location: "Los Angeles, CA",
     imageUrl: miller, // Replace with actual image URL
     rating: 4.5,
@@ -32,7 +32,7 @@ const testimonials = [
   {
     name: "Michael Harrington",
     feedback:
-      "I’ve been using Averitte Express for all my deliveries. Their real-time tracking keeps me updated, and their 24/7 customer support has always been there to help me with any questions.",
+      "I’ve been using Time Factor for all my deliveries. Their real-time tracking keeps me updated, and their 24/7 customer support has always been there to help me with any questions.",
     location: "Chicago, IL",
     imageUrl: michael, // Replace with actual image URL
     rating: 4,
@@ -40,7 +40,7 @@ const testimonials = [
   {
     name: "Emily Davis",
     feedback:
-      "Averitte Express is hands down the best delivery service I’ve used! I love that I can track my delivery in real-time, and their 24-hour support means I can always reach someone if I have a concern.",
+      "TFL is hands down the best delivery service I’ve used! I love that I can track my delivery in real-time, and their 24-hour support means I can always reach someone if I have a concern.",
     location: "Houston, TX",
     imageUrl: emily, // Replace with actual image URL
     rating: 5,
@@ -48,7 +48,7 @@ const testimonials = [
   {
     name: "Robert Brown",
     feedback:
-      "I can't praise Averitte Express enough for their exceptional service! The care they take with each package is evident—a top-tier service that I trust completely!",
+      "I can't praise Time FActor Logistics enough for their exceptional service! The care they take with each package is evident—a top-tier service that I trust completely!",
     location: "Miami, FL",
     imageUrl: robert, // Replace with actual image URL
     rating: 4.5,
