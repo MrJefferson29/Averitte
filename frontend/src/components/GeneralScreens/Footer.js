@@ -45,13 +45,13 @@ function Footer() {
             <FooterSection>
               <FooterTitle>Connect With Us</FooterTitle>
               <SocialIcons>
-                <SocialIcon href="https://www.facebook.com/profile.php?id=61590373607484" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <SocialIcon href="https://www.facebook.com/share/1C8xiA5HRM/?mibextidwwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <Facebook size={20} />
                 </SocialIcon>
                 <SocialIcon href="https://www.facebook.com/share/1C8xiA5HRM/?mibextidwwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                   <Twitter size={20} />
                 </SocialIcon>
-                <SocialIcon href="https://www.facebook.com/profile.php?id=61590373607484" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <SocialIcon href="https://www.facebook.com/share/1C8xiA5HRM/?mibextidwwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <Instagram size={20} />
                 </SocialIcon>
               </SocialIcons>
