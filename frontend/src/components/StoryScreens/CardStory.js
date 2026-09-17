@@ -163,8 +163,8 @@ const Story = ({ story }) => {
               <p className="contact-info">
                 <strong>Contact Information:</strong> For inquiries, contact
                 our support at{" "}
-                <a href="mailto:averittexpressdelivery3@gmail.com">
-                 averittexpressdelivery3@gmail.com
+                <a href="mailto:timefactorlogistics.vercelapp@yahoo.com">
+                 timefactorlogistics.vercelapp@yahoo.com
                 </a>
                 .
               </p>
