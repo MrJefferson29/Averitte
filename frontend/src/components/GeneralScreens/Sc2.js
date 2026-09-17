@@ -16,13 +16,13 @@ export default function Sc2() {
       imgSrc: v1,
       alt: "Warehouse Inventory Management",
       title: "Warehouse on Hand Inventory",
-      description: "Averitte Express meticulously manages its warehouse on-hand inventory to ensure efficiency, accuracy, and seamless operations across both package and pet delivery pipelines."
+      description: "Time Factor Logitics meticulously manages its warehouse on-hand inventory to ensure efficiency, accuracy, and seamless operations across both package and pet delivery pipelines."
     },
     {
       imgSrc: v2,
       alt: "Minimize Manufacturing Costs",
       title: "Minimize Cost of Manufacturing",
-      description: "Averitte Express strategically reduces supply chain overhead costs through network innovation, ensuring highly competitive shipping rates for your specialized logistics."
+      description: "Time Factor Logistics strategically reduces supply chain overhead costs through network innovation, ensuring highly competitive shipping rates for your specialized logistics."
     },
     {
       imgSrc: v3,
@@ -35,11 +35,11 @@ export default function Sc2() {
   const additionalArticles = [
     {
       title: "Efficient Last-Mile Delivery Solutions",
-      description: "Discover how Averitte Express optimizes last-mile delivery to reduce transit costs and sustainably improve custom user satisfaction metrics."
+      description: "Discover how Time Factor Logistics optimizes last-mile delivery to reduce transit costs and sustainably improve custom user satisfaction metrics."
     },
     {
       title: "Technological Advances in Delivery",
-      description: "Exploring the latest hardware integrations and system tracking tools that keep Averitte Express at the forefront of logistical engineering."
+      description: "Exploring the latest hardware integrations and system tracking tools that keep Time Factor Logistics at the forefront of logistical engineering."
     },
     {
       title: "Eco-Friendly Packaging Initiatives",
