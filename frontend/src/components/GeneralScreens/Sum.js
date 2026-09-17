@@ -5,7 +5,7 @@ export default function Sum() {
   const summaryData = [
     {
       title: "Efficient Delivery",
-      content: "Averitte Express provides enhanced logistics operations for efficient and safe cargo delivery, including specialized pet transport services. Our goal is to take the stress out of freight forwarding for our clients.",
+      content: "TFL provides enhanced logistics operations for efficient and safe cargo delivery, including specialized pet transport services. Our goal is to take the stress out of freight forwarding for our clients.",
       hasButton: true
     },
     {
@@ -20,12 +20,12 @@ export default function Sum() {
     },
     {
       title: "Warehouse Storage",
-      content: "Averitte Express provides safe and specialized storage solutions to ensure the safety and comfort of goods and pets in our care.",
+      content: "Time Factor Logistics provides safe and specialized storage solutions to ensure the safety and comfort of goods and pets in our care.",
       hasButton: true
     },
     {
       title: "Refund Policy",
-      content: "At Averitte Express, customer satisfaction is our top priority. Please note that all refundable bills are cleared upon delivery. Once your package has been delivered and signed for, any eligible refunds will be processed and handed directly to the customer in cash at the time of delivery.",
+      content: "At Time Factor Logistics, customer satisfaction is our top priority. Please note that all refundable bills are cleared upon delivery. Once your package has been delivered and signed for, any eligible refunds will be processed and handed directly to the customer in cash at the time of delivery.",
       hasButton: true
     },
     {
@@ -41,14 +41,14 @@ export default function Sum() {
     },
     {
       title: "About Us",
-      content: "Averitte Express is a leading logistics operator, specializing in the safe and efficient delivery of goods. We offer a full range of services in customs clearance and transportation worldwide for both pets and cargo. Our skilled team, supported by advanced tracking and processing software, ensures safe, efficient transport for your needs.",
+      content: "TFL is a leading logistics operator, specializing in the safe and efficient delivery of goods. We offer a full range of services in customs clearance and transportation worldwide for both pets and cargo. Our skilled team, supported by advanced tracking and processing software, ensures safe, efficient transport for your needs.",
       hasButton: false
     }
   ];
 
   return (
     <SummaryContainer>
-      <MainHeader>Averitte Express Logistics - Safe & Reliable Delivery Solutions</MainHeader>
+      <MainHeader>Time Factor Logistics - Safe & Reliable Delivery Solutions</MainHeader>
 
       {summaryData.map((item, index) => (
         <CardSection key={`summary-section-${index}`}>
