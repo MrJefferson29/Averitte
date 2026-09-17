@@ -14,7 +14,7 @@ function Footer() {
           {/* Brand/About Segment */}
           <Col xs={12} md={5} lg={4}>
             <FooterSection>
-              <FooterLogo>Averitt Express</FooterLogo>
+              <FooterLogo>Time Factor Logistics</FooterLogo>
               <FooterDescription>
                 A distinguished global logistics network meticulously executing modern supply chain controls. 
                 We handle premium freight forwarding and specialized live pet logistics with unparalleled safety standards.
@@ -62,7 +62,7 @@ function Footer() {
 
       <FooterBottom>
         <Container>
-          <p className="mb-0">&copy; {currentYear} Averitte Express. All rights reserved.</p>
+          <p className="mb-0">&copy; {currentYear} Time Factor Logistics. All rights reserved.</p>
         </Container>
       </FooterBottom>
     </FooterContainer>
