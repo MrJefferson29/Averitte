@@ -80,7 +80,7 @@ export default function Sc1() {
         {/* Detailed Marketing Info Section */}
         <InfoSection>
           <Col xs={12} md={6} className="d-flex justify-content-center align-items: center">
-            <StyledImage src={b1} alt="Averitte Express Logistics Solutions" />
+            <StyledImage src={b1} alt="TFL Logistics Solutions" />
           </Col>
           
           <Col xs={12} md={6}>
@@ -88,7 +88,7 @@ export default function Sc1() {
               Safe, Reliable, and Express Delivery & Transport Solutions That Save Your Time!
             </InfoHeading>
             <InfoText>
-              Averitte Express is a leading logistics operator specializing in the safe and efficient delivery of goods. We provide a full range of services in customs clearance and transportation worldwide for pets and any type of cargo.
+              Time Factor Logistics is a leading logistics operator specializing in the safe and efficient delivery of goods. We provide a full range of services in customs clearance and transportation worldwide for pets and any type of cargo.
               <br /><br />
               Our commitment to delivering the best transport and shipping services extends to our pet delivery solutions. Our skilled personnel, utilizing the latest tracking software combined with decades of experience, ensure your pets are transported safely.
             </InfoText>
