@@ -37,7 +37,7 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand as={Link} to="/" onClick={closeNav}>
-            <BrandLogo>AVERITT EXPRESS</BrandLogo>
+            <BrandLogo>TIME FACTOR LOGISTICS</BrandLogo>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggle" />
